@@ -27,10 +27,10 @@ class Math():
 
         Choose_Label = Label(self.main, text="Pick a formula below and we'll solve it!", font=('arial', 25)).place(x=10,y=75)
         Choose_Label2 = Label(self.main, text='Formula:', font=('arial',20)).place(x=250,y=200)
-        # canvas = Canvas(self.main, width=300, height=300)
-        # canvas.pack()
-        # img = ImageTk.PhotoImage(Image.open("calculator.png"))
-        # canvas.create_image(20, 20, anchor=NW, image=img)
+        canvas = Canvas(self.main, width=92, height=125)
+        canvas.place(x=600,y=20)
+        img = ImageTk.PhotoImage(Image.open("calculator.png"))
+        canvas.create_image(0, 0, anchor=NW, image=img)
 
         self.formula_entry = StringVar(self.main)
         formulas = {'Area of Square', 'Area of Rectangle', 'Area of Right Triangle', 'Area of Rhombus', 'Area of Circle'
